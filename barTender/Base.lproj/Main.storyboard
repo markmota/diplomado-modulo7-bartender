@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Log-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Log" customClass="ViewController" customModule="barTender" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,223 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FwX-2D-uCV">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bartender@1x" translatesAutoresizingMaskIntoConstraints="NO" id="1JT-iJ-bR5">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="76" id="IqY-Yb-Wac"/>
+                                            <constraint firstAttribute="height" constant="76" id="SCT-pI-udt"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cqc-38-x9e">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="xIx-Ur-oLX"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1M6-bN-8SW">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="fSx-lN-WNw"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGg-Ax-w1l" customClass="CustomButton" customModule="barTender" customModuleProvider="target">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="EiF-mQ-N92"/>
+                                        </constraints>
+                                        <state key="normal" title="Let's mix"/>
+                                        <connections>
+                                            <action selector="btnLog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wwd-Jh-FbZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="KGg-Ax-w1l" firstAttribute="leading" secondItem="FwX-2D-uCV" secondAttribute="leading" constant="130" id="6jg-K3-9w5"/>
+                                    <constraint firstAttribute="trailing" secondItem="1M6-bN-8SW" secondAttribute="trailing" constant="60" id="7HY-eC-gGK"/>
+                                    <constraint firstAttribute="trailing" secondItem="cqc-38-x9e" secondAttribute="trailing" constant="60" id="9Qo-yr-TuD"/>
+                                    <constraint firstAttribute="trailing" secondItem="KGg-Ax-w1l" secondAttribute="trailing" constant="130" id="ASZ-VB-KKr"/>
+                                    <constraint firstItem="1JT-iJ-bR5" firstAttribute="centerX" secondItem="FwX-2D-uCV" secondAttribute="centerX" id="Enn-3H-cuf"/>
+                                    <constraint firstItem="KGg-Ax-w1l" firstAttribute="centerX" secondItem="FwX-2D-uCV" secondAttribute="centerX" id="FHP-b1-91t"/>
+                                    <constraint firstItem="1M6-bN-8SW" firstAttribute="leading" secondItem="FwX-2D-uCV" secondAttribute="leading" constant="60" id="LHH-jj-Knd"/>
+                                    <constraint firstItem="1M6-bN-8SW" firstAttribute="centerX" secondItem="FwX-2D-uCV" secondAttribute="centerX" id="VLg-GJ-3ub"/>
+                                    <constraint firstItem="cqc-38-x9e" firstAttribute="leading" secondItem="FwX-2D-uCV" secondAttribute="leading" constant="60" id="a82-Vr-tPi"/>
+                                    <constraint firstItem="cqc-38-x9e" firstAttribute="centerX" secondItem="FwX-2D-uCV" secondAttribute="centerX" id="ie9-QH-a88"/>
+                                    <constraint firstItem="cqc-38-x9e" firstAttribute="top" secondItem="1JT-iJ-bR5" secondAttribute="bottom" constant="20" id="lJW-Cv-sTG"/>
+                                    <constraint firstItem="KGg-Ax-w1l" firstAttribute="top" secondItem="1M6-bN-8SW" secondAttribute="bottom" constant="20" id="lxY-X3-8pC"/>
+                                    <constraint firstItem="1M6-bN-8SW" firstAttribute="top" secondItem="cqc-38-x9e" secondAttribute="bottom" constant="20" id="nBh-J2-3y8"/>
+                                    <constraint firstItem="1JT-iJ-bR5" firstAttribute="top" secondItem="FwX-2D-uCV" secondAttribute="top" constant="30" id="uaQ-IO-mLP"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QPy-Wc-b8E" appends="YES" id="lMy-H8-fuS"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.20784313725490197" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="FwX-2D-uCV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1XX-mA-bAc"/>
+                            <constraint firstItem="FwX-2D-uCV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="C8H-z2-eeb"/>
+                            <constraint firstItem="FwX-2D-uCV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Fku-wr-gF8"/>
+                            <constraint firstAttribute="trailing" secondItem="FwX-2D-uCV" secondAttribute="trailing" id="Hnr-6w-c32"/>
+                            <constraint firstItem="FwX-2D-uCV" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="hq1-Ek-wRT"/>
+                            <constraint firstItem="FwX-2D-uCV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nSC-Za-YPz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FwX-2D-uCV" secondAttribute="bottom" id="rbR-nl-OW7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="FwX-2D-uCV" id="Lpo-MI-D3c"/>
+                        <outlet property="txtPass" destination="1M6-bN-8SW" id="kV0-GS-cTW"/>
+                        <outlet property="txtUser" destination="cqc-38-x9e" id="KaE-Qv-buC"/>
+                        <segue destination="ST4-jr-jhO" kind="show" identifier="login" id="Q9L-Uh-1ni"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QPy-Wc-b8E">
+                    <connections>
+                        <action selector="tabAction:" destination="BYZ-38-t0r" id="2DL-vd-XmU"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-26" y="21"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="4kV-5F-bYF">
+            <objects>
+                <tableViewController id="X6K-1B-opt" customClass="DrinksTable" customModule="barTender" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="t3F-WV-tGF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.89411764705882357" green="0.87450980392156863" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="Hgw-6m-wSu">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hgw-6m-wSu" id="ega-l8-E9B">
+                                    <frame key="frameInset" width="342" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="H6L-aH-yVt" kind="show" id="LgI-Jp-4Qi"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="X6K-1B-opt" id="ahe-nC-aGp"/>
+                            <outlet property="delegate" destination="X6K-1B-opt" id="bGR-aN-pdg"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="dS3-r1-9eh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h13-CG-wks" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1746" y="36"/>
+        </scene>
+        <!--Drink Detail-->
+        <scene sceneID="iyv-20-zLW">
+            <objects>
+                <viewController id="H6L-aH-yVt" customClass="DrinkDetail" customModule="barTender" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mXy-Yt-FdW"/>
+                        <viewControllerLayoutGuide type="bottom" id="p0T-f4-eRJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pg0-sJ-ZoF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drink Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdH-V9-JlO" customClass="CustomLabelAppTitle" customModule="barTender" customModuleProvider="target">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And now do this:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhB-ci-l9X" userLabel="Label direccions" customClass="CustomLabelDrinkTitle" customModule="barTender" customModuleProvider="target">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="g0N-0H-NrB" userLabel="Direccions">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Bok-T3-oOp"/>
+                                    <constraint firstAttribute="height" constant="128" id="MYS-vQ-iQI"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will need:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeB-Jx-k0K" userLabel="Label ingredients" customClass="CustomLabelDrinkTitle" customModule="barTender" customModuleProvider="target">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PFl-k7-wjb" userLabel="Ingredients">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="2Jp-k7-zje"/>
+                                    <constraint firstAttribute="height" constant="128" id="NUm-12-lYm"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xR2-lq-lTl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Fne-E7-S09"/>
+                                    <constraint firstAttribute="width" constant="240" id="RUY-Hv-1At"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.53333333333333333" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="g0N-0H-NrB" firstAttribute="centerX" secondItem="Pg0-sJ-ZoF" secondAttribute="centerX" id="2hz-ez-L1T"/>
+                            <constraint firstItem="BeB-Jx-k0K" firstAttribute="leading" secondItem="Pg0-sJ-ZoF" secondAttribute="leadingMargin" constant="26" id="587-HJ-TxV"/>
+                            <constraint firstItem="xR2-lq-lTl" firstAttribute="centerX" secondItem="Pg0-sJ-ZoF" secondAttribute="centerX" id="BiK-mV-Pde"/>
+                            <constraint firstItem="xR2-lq-lTl" firstAttribute="top" secondItem="QdH-V9-JlO" secondAttribute="bottom" constant="8" id="LQ5-69-SXq"/>
+                            <constraint firstItem="PFl-k7-wjb" firstAttribute="top" secondItem="BeB-Jx-k0K" secondAttribute="bottom" constant="8" id="Mdc-oo-vkL"/>
+                            <constraint firstItem="fhB-ci-l9X" firstAttribute="leading" secondItem="Pg0-sJ-ZoF" secondAttribute="leadingMargin" constant="30" id="Ofl-Z7-5pv"/>
+                            <constraint firstItem="BeB-Jx-k0K" firstAttribute="top" secondItem="xR2-lq-lTl" secondAttribute="bottom" constant="18" id="SIP-hp-Oxh"/>
+                            <constraint firstItem="g0N-0H-NrB" firstAttribute="top" secondItem="fhB-ci-l9X" secondAttribute="bottom" constant="17" id="Uwe-0E-UzK"/>
+                            <constraint firstItem="QdH-V9-JlO" firstAttribute="top" secondItem="mXy-Yt-FdW" secondAttribute="bottom" constant="31" id="XhI-Cw-ijW"/>
+                            <constraint firstItem="PFl-k7-wjb" firstAttribute="centerX" secondItem="Pg0-sJ-ZoF" secondAttribute="centerX" id="e5I-HP-xbm"/>
+                            <constraint firstItem="QdH-V9-JlO" firstAttribute="centerX" secondItem="Pg0-sJ-ZoF" secondAttribute="centerX" id="otU-Zm-gys"/>
+                            <constraint firstItem="fhB-ci-l9X" firstAttribute="top" secondItem="PFl-k7-wjb" secondAttribute="bottom" constant="28" id="rcy-C2-05E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgDrink" destination="xR2-lq-lTl" id="95g-e3-epy"/>
+                        <outlet property="txtIngredients" destination="PFl-k7-wjb" id="SXa-m4-IFv"/>
+                        <outlet property="txtRecipie" destination="g0N-0H-NrB" id="p24-8v-YZr"/>
+                        <outlet property="txtTitle" destination="QdH-V9-JlO" id="hva-M0-DA8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="owj-k3-usG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1744.8" y="767.76611694152928"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WHx-m7-KS5">
+            <objects>
+                <navigationController id="ST4-jr-jhO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="152-CB-Ohv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="X6K-1B-opt" kind="relationship" relationship="rootViewController" id="D7F-cG-NnH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U9R-jQ-hqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="36"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bartender@1x" width="76" height="76"/>
+    </resources>
 </document>

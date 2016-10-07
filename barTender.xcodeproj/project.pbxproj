@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551E159B1DA30BEC00D6D416 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E159A1DA30BEC00D6D416 /* CustomButton.swift */; };
+		551E159D1DA40BAB00D6D416 /* Drinks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 551E159C1DA40BAB00D6D416 /* Drinks.plist */; };
+		551E159F1DA40C4700D6D416 /* DrinksTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E159E1DA40C4700D6D416 /* DrinksTable.swift */; };
+		551E15A11DA4107B00D6D416 /* DrinkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E15A01DA4107B00D6D416 /* DrinkDetail.swift */; };
+		551E15A31DA414C800D6D416 /* CustomLabelDrinkTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E15A21DA414C800D6D416 /* CustomLabelDrinkTitle.swift */; };
 		5538CB161DA2A7E8003831B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5538CB151DA2A7E8003831B1 /* AppDelegate.swift */; };
 		5538CB181DA2A7E8003831B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5538CB171DA2A7E8003831B1 /* ViewController.swift */; };
 		5538CB1B1DA2A7E8003831B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5538CB191DA2A7E8003831B1 /* Main.storyboard */; };
 		5538CB1E1DA2A7E8003831B1 /* barTender.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5538CB1C1DA2A7E8003831B1 /* barTender.xcdatamodeld */; };
 		5538CB201DA2A7E8003831B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5538CB1F1DA2A7E8003831B1 /* Assets.xcassets */; };
 		5538CB231DA2A7E8003831B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5538CB211DA2A7E8003831B1 /* LaunchScreen.storyboard */; };
+		5538CB2B1DA2A8BF003831B1 /* Mayeka Regular Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5538CB2A1DA2A8BF003831B1 /* Mayeka Regular Demo.otf */; };
+		5538CB2D1DA2A8CF003831B1 /* Olivia Garcia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5538CB2C1DA2A8CF003831B1 /* Olivia Garcia.ttf */; };
+		5538CB311DA2AFF9003831B1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5538CB301DA2AFF9003831B1 /* Theme.swift */; };
+		5538CB331DA2B209003831B1 /* CustomLabelAppTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5538CB321DA2B209003831B1 /* CustomLabelAppTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		551E159A1DA30BEC00D6D416 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomButton.swift; path = barTender/CustomButton.swift; sourceTree = "<group>"; };
+		551E159C1DA40BAB00D6D416 /* Drinks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Drinks.plist; sourceTree = "<group>"; };
+		551E159E1DA40C4700D6D416 /* DrinksTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrinksTable.swift; path = ../DrinksTable.swift; sourceTree = "<group>"; };
+		551E15A01DA4107B00D6D416 /* DrinkDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkDetail.swift; sourceTree = "<group>"; };
+		551E15A21DA414C800D6D416 /* CustomLabelDrinkTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabelDrinkTitle.swift; sourceTree = "<group>"; };
 		5538CB121DA2A7E8003831B1 /* barTender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = barTender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5538CB151DA2A7E8003831B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5538CB171DA2A7E8003831B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +38,10 @@
 		5538CB1F1DA2A7E8003831B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5538CB221DA2A7E8003831B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5538CB241DA2A7E8003831B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5538CB2A1DA2A8BF003831B1 /* Mayeka Regular Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mayeka Regular Demo.otf"; sourceTree = "<group>"; };
+		5538CB2C1DA2A8CF003831B1 /* Olivia Garcia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Olivia Garcia.ttf"; sourceTree = "<group>"; };
+		5538CB301DA2AFF9003831B1 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		5538CB321DA2B209003831B1 /* CustomLabelAppTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabelAppTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +58,8 @@
 		5538CB091DA2A7E8003831B1 = {
 			isa = PBXGroup;
 			children = (
+				5538CB2F1DA2AFE7003831B1 /* theme */,
+				5538CB2E1DA2A8D4003831B1 /* fonts */,
 				5538CB141DA2A7E8003831B1 /* barTender */,
 				5538CB131DA2A7E8003831B1 /* Products */,
 			);
@@ -56,15 +76,38 @@
 		5538CB141DA2A7E8003831B1 /* barTender */ = {
 			isa = PBXGroup;
 			children = (
+				551E159E1DA40C4700D6D416 /* DrinksTable.swift */,
 				5538CB151DA2A7E8003831B1 /* AppDelegate.swift */,
 				5538CB171DA2A7E8003831B1 /* ViewController.swift */,
 				5538CB191DA2A7E8003831B1 /* Main.storyboard */,
 				5538CB1F1DA2A7E8003831B1 /* Assets.xcassets */,
 				5538CB211DA2A7E8003831B1 /* LaunchScreen.storyboard */,
 				5538CB241DA2A7E8003831B1 /* Info.plist */,
+				551E159C1DA40BAB00D6D416 /* Drinks.plist */,
 				5538CB1C1DA2A7E8003831B1 /* barTender.xcdatamodeld */,
+				551E15A01DA4107B00D6D416 /* DrinkDetail.swift */,
 			);
 			path = barTender;
+			sourceTree = "<group>";
+		};
+		5538CB2E1DA2A8D4003831B1 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5538CB2A1DA2A8BF003831B1 /* Mayeka Regular Demo.otf */,
+				5538CB2C1DA2A8CF003831B1 /* Olivia Garcia.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		5538CB2F1DA2AFE7003831B1 /* theme */ = {
+			isa = PBXGroup;
+			children = (
+				5538CB301DA2AFF9003831B1 /* Theme.swift */,
+				551E159A1DA30BEC00D6D416 /* CustomButton.swift */,
+				5538CB321DA2B209003831B1 /* CustomLabelAppTitle.swift */,
+				551E15A21DA414C800D6D416 /* CustomLabelDrinkTitle.swift */,
+			);
+			name = theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +171,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5538CB231DA2A7E8003831B1 /* LaunchScreen.storyboard in Resources */,
+				5538CB2B1DA2A8BF003831B1 /* Mayeka Regular Demo.otf in Resources */,
 				5538CB201DA2A7E8003831B1 /* Assets.xcassets in Resources */,
 				5538CB1B1DA2A7E8003831B1 /* Main.storyboard in Resources */,
+				5538CB2D1DA2A8CF003831B1 /* Olivia Garcia.ttf in Resources */,
+				551E159D1DA40BAB00D6D416 /* Drinks.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,9 +186,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5538CB331DA2B209003831B1 /* CustomLabelAppTitle.swift in Sources */,
 				5538CB181DA2A7E8003831B1 /* ViewController.swift in Sources */,
+				551E15A31DA414C800D6D416 /* CustomLabelDrinkTitle.swift in Sources */,
+				551E159B1DA30BEC00D6D416 /* CustomButton.swift in Sources */,
+				551E159F1DA40C4700D6D416 /* DrinksTable.swift in Sources */,
+				5538CB311DA2AFF9003831B1 /* Theme.swift in Sources */,
 				5538CB161DA2A7E8003831B1 /* AppDelegate.swift in Sources */,
 				5538CB1E1DA2A7E8003831B1 /* barTender.xcdatamodeld in Sources */,
+				551E15A11DA4107B00D6D416 /* DrinkDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +317,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 277JQ5FG9P;
 				INFOPLIST_FILE = barTender/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.perezdelara.marduk.barTender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 277JQ5FG9P;
 				INFOPLIST_FILE = barTender/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.perezdelara.marduk.barTender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +358,7 @@
 				5538CB291DA2A7E8003831B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
